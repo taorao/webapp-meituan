@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/api.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="bank">
+			<div class="bank_1">
+				<a href="login.html">
+					<i class="icon iconfont icon-zuo">
+				</i>
+				</a>
+			</div>
+			<div class="bank_2">
+				<span>卡包</span>
+			</div>
+			<div class="bank_3">
+				<span>+</span>
+			</div>
+		</div>
+		<div class="jyjl">
+			<h2 class="vipTitle">
+          		<span>银行卡绑定</span>
+         	</h2>
+			<div class="yinhangka">
+				<div class="yhangkaList">
+					<h3>工商银行</h3>
+					<div class="yinhangMeass">
+						<span class="hui">账号 </span> 6222 0000 0000 0000
+
+						<a class="removeyin" href="#">[删除]</a>
+					</div>
+				</div>
+				
+				<div class="yhangkaList">
+					<div class="tianjiayinhang">
+						<p>
+							<i class="icon iconfont icon-icon02"></i>
+						</p>
+						<p class="blue">添加一张银行卡</p>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</div>
+		<div class="addYinhang">
+			<h3>添加银行卡 <span class="glyphicon glyphicon-remove"></span></h3>
+			<select id="selct">
+				<option>工商银行</option>
+				<option>中国银行</option>
+				<option>建设银行</option>
+				<option>邮政银行</option>
+			</select>
+			<input id="_3" type="text" value="" size="25" onkeyup="formatBankNo(this)" onkeydown="formatBankNo(this)" name="account" >
+			<div class="yhts">
+				注意：此银行卡开户人必须和您实名认证的名字一样，否则提现无法成功到账
+			</div>
+			<div class="moren">
+				<input type="checkbox" /> 设为默认银行
+			</div>
+			<a href="#" class="addTian">添加</a>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+
+</html>

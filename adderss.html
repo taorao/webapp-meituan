@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/api.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<style>
+		
+	</style>
+</head>
+<body>
+		<div class="adress">
+			<div class="adress-1">
+				<a href="login.html"><i class="icon iconfont icon-zuo"></i></a>
+			</div>
+			<div class="adress-2">
+				 <span>新增收货地址</span>
+			</div>
+  	        <div class="adress-3">
+  	        	<span style="font-size: 16px;">
+  	        		管理
+  	        	</span>
+  	        </div>   
+	  </div>
+	    <div class="adress-content">
+	    	<div class="adress-content-1">
+	    				
+	    				<p>
+	    					<i class="icon iconfont icon-fujin"></i>
+	    					地点:山西省太原市万柏林区千峰南路后王街口
+	    					&nbsp;&nbsp;&nbsp;&nbsp;刘旭涛
+	    					&nbsp;&nbsp;&nbsp;&nbsp;18435161714
+	    				</p>
+	    	</div>
+	    	<div class="adress-content-2">
+		    		<ul class="contant">
+				    	<li><input type="text" id="contant-1" placeholder="请输入详细地址"/></li>
+				    	<li><input type="text" id="contant-2" placeholder="请输入姓名"/></li>
+				    	<li><input type="text" id="contant-3" placeholder="请输入手机号"/></li>
+				    </ul>
+				    <button class="btn111">确定</button>
+	    	</div>
+	    </div>
+	    <script src="js/jquery.js"></script>
+	    <script src="js/main.js"></script>
+	    <script>
+	    	$('.btn111').click(function(){
+	    	    var content1=$("#contant-1").val();
+	    	    var content2=$("#contant-2").val();
+	    	    var content3=$("#contant-3").val();
+	    		var str = "<p><i class='icon iconfont icon-fujin'></i>地点:"+content1+"&nbsp;&nbsp;&nbsp;&nbsp;"+ content2+'&nbsp;&nbsp;&nbsp;&nbsp;' + content3+'</p>'
+	    		$('.adress-content-1').append(str)
+	    		$(".contant").css('display','none')
+	    	})
+	    </script>
+</body>
+</html>

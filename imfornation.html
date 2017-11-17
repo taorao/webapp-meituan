@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/api.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+		
+		<div class="information1">
+			<div class="informationq-content-first">
+				<div class="informationq-content-first1">
+					<a href="login.html"><i class="icon iconfont icon-zuo"></i></a>
+				</div>
+				<div class="informationq-content-first2">
+					<span>个人资料</span>
+				</div>
+			</div>
+			<div class="informationq-content-first rename-information">
+				<div class="informationq-content-first1">
+					<a href="#"><span>返回</span></a>
+				</div>
+				<div class="informationq-content-first2">
+					<span>编辑资料</span>
+				</div>
+			</div>
+			<div class="informationq-content-two">
+				<div class="informationq-content-two1">
+					<ul>
+						<li>
+							<div class="informationq-content-two1-1">
+								<span>头像</span>
+							</div>
+							<div class="third-2 informationq-content-two1-2">
+					                <img src="images/1.png">
+					                <input type="file">
+					        </div>	
+							<div class="informationq-content-two1-3">
+								<i class="icon iconfont icon-you"></i>
+							</div>
+						</li>
+						<li class="rename-1">
+								<div class="informationq-content-two1-1">
+									<span>昵称:</span>
+								</div>
+								<div class="informationq-content-two1-2">
+										<span>18435161714</span>
+								</div>	
+								<div class="informationq-content-two1-3">
+									<i class="icon iconfont icon-you"></i>
+								</div>
+							</li>
+						<li class="rename-3">
+							<div class="informationq-content-two1-1">
+								<span>账号密码</span>
+							</div>
+							<div class="informationq-content-two1-2">
+					                <span>修改</span>
+					        </div>	
+							<div class="informationq-content-two1-3">
+								<i class="icon iconfont icon-you"></i>
+							</div>
+						</li>
+						<li class="rename-2">
+							<div class="informationq-content-two1-1">
+								<span>手机号</span>
+							</div>
+							<div class="informationq-content-two1-2">
+					                <span>18435161714</span>
+					        </div>	
+							<div class="informationq-content-two1-3">
+								<i class="icon iconfont icon-you"></i>
+							</div>
+						</li>
+						<li>
+							<div class="informationq-content-two1-1">
+								<span>微信账号</span>
+							</div>
+							<div class="informationq-content-two1-2">
+					                <span>解绑</span>
+					        </div>	
+							<div class="informationq-content-two1-3">
+								<i class="icon iconfont icon-you"></i>
+							</div>
+						</li>
+					</ul>
+					<div class="rename">
+						<div class="rename-label">
+							<label>昵&nbsp;&nbsp;&nbsp;&nbsp;称:</label>
+							<input type="text" id="renamelabel"/>
+							<button class="btn11">确认修改</button>
+						</div>
+						<div class="rename-username">
+							<label>手机号:</label>
+							<input type="text" id="renameusername"/>
+							<button class="btn22">确认修改</button>
+						</div>
+						<div class="rename-pwd">
+							<label>密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+							<input type="text" id="renamepassword"/>
+							<button class="btn33">确认修改</button>
+						</div>
+					</div>
+				</div>
+				<div class="informationq-content-two2">
+					<div class="quit">
+						<button class="button1">
+								<a href="#">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+						</button>
+						<button class="button2">
+								<a href="#">退出当前账号</a>
+						</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.btn11').click(function(){
+			var newnickname=$('#renamelabel').val();
+			setCookie("nickname", newnickname, 7)
+		})
+		$('.btn22').click(function(){
+			var newusername=$('#renameusername').val();
+			setCookie("username", newusername, 7)
+		})
+		$('.btn33').click(function(){
+			var newpassword=$('#renamepassword').val();
+			setCookie("password", newpassword, 7)
+		})
+	</script>
+</html>
